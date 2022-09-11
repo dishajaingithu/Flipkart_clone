@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site for Mobiles,Electronics,Furniture,Grocery,LifeStyle,Books & More. Best Offers</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-all-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+
+            background: rgb(51, 51, 227);
+            border: 2px solid black;
+            font-family: 'Lato', sans-serif;
+
+
+        }
+
+        nav ul {
+            height: 58px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        footer {
+            height: 10vh;
+            background: blue;
+            color: white;
+            font-family: 'Lato', sans-serif;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-weight: bolder;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 48px;
+            padding: 0 23px;
+        }
+
+        .container {
+            min-height: calc(100vh - 48px - 10vh);
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 350px;
+            height: 27px;
+            border-radius: 5px white;
+            margin: 0 16px 0 56px;
+            padding: 0 12px;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            color: black;
+            background: white;
+            border: 2px solid black;
+            border-radius: 7px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .search button {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+        }
+
+        .slider {
+            width: 80vw;
+            margin: 12px auto;
+            overflow: hidden;
+        }
+        .card {
+            max-width: 91vw;
+            margin: auto;
+        }
+        .cards {
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        .card-item {
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 15px;
+        }
+        .card h2 {
+            font-family: 'Lato', sans-serif;
+        }
+        .my-1 {
+            margin: 5px;
+        }
+        .my-2 {
+            margin: 26px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        @media screen and (max-width:1000px){     
+            nav{
+                flex-direction: column;
+            }
+            .slider{
+                height: 23vh;
+            }
+            .logo{
+                justify-content: center;
+                margin: 12px 0;
+            }
+            nav ul{
+                justify-content: center;
+                height: 34px;
+            }
+            .search{
+                justify-content: center;
+            }
+            .search input{
+                margin: 12px 16px;
+            }
+            .card-item img{
+                width:140px ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">FindHere</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/random/1600x500/?shopping,ecommerce" alt="">
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">Join the cricket Fun</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,ball" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,bat" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,stumps" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,keeping" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,match" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2">Best Battery phones</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?phone,battery" alt="" width="200px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Battery</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,bat" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,stumps" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,keeping" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/random/160x160/?cricket,match" alt="" width="160px">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com</p>
+    </footer>
+
+</body>
+
+</html>
